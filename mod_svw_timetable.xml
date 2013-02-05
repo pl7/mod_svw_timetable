@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <!-- Name of the Module -->
+	<name>SVW Timetable</name> 
+ 
+    <!-- Name of the Author -->
+	<author>Pascal Link</author> 
+ 
+    <!-- Version Date of the Module -->
+	<creationDate>2012-11-02</creationDate> 
+ 
+    <!-- Copyright information -->
+	<copyright>All rights reserved by Pascal Link (C) 2012.</copyright> 
+ 
+    <!-- License Information -->
+	<license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+	<authorEmail>pascal.link@pl07.de</authorEmail> 
+ 
+    <!-- Author's website -->
+	<authorUrl>http://www.pl07.de</authorUrl> 
+ 
+    <!-- Module version number -->
+	<version>1.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+	<description>Displays a timetable with events from the database.</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+	<files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+		<filename module="mod_svw_timetable">mod_svw_timetable.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>css/index.html</filename>
+		<filename>css/mod_svw_timetable.css</filename>
+	</files>
+	<media folder="media" destination="mod_svw_timetable">
+		<folder>css</folder>
+	</media>
+ 
+    <!-- Optional parameters -->
+	<config>
+            <fields name="params">
+                <fieldset name="basic">
+                     <field 
+                        name="event_start" 
+                        type="text" 
+                        default="2012-07-01" 
+                        label="Beginn" 
+                        description="TPL_MEINVEREIN_SVW_TEAM_KEY_DESC">
+                    </field>
+                     <field 
+                        name="event_end" 
+                        type="text" 
+                        default="2013-06-30" 
+                        label="Ende" 
+                        description="TPL_MEINVEREIN_SVW_TEAM_SEASON_KEY_DESC">
+                    </field>
+                </fieldset>
+            </fields>
+    </config>
+</extension>

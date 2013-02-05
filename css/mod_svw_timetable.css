@@ -1,0 +1,80 @@
+
+/* TIMETABLE */
+table.timetable {
+	width: 100%;
+	border:none;
+}
+table.timetable tbody tr td {
+    padding: 0;
+}
+table tbody tr td {
+    vertical-align: middle;
+}
+
+table.timetable  td,
+table.timetable  th{
+	text-align: center;
+}
+table.timetable  td.subheadline{
+	font-size: smaller;
+}
+td.time {
+	font-size: smaller;
+}
+table.timetable .u7,table.timetable .u6 {
+	background: rgb(255, 115, 255);
+}
+table.timetable .u9,table.timetable .u8 {
+	background: yellow;
+}
+table.timetable .u14, 
+table.timetable .u15 {
+    background: red;
+	color: white;
+}
+
+table.timetable .u10-1,
+table.timetable  .u11, 
+table.timetable .u10{
+    background: rgb(255, 173, 0);
+}
+table.timetable .u12 ,
+table.timetable .u13
+{
+    background: lime;
+}
+table.timetable .u17 {
+    background: rgb(0, 255, 255);
+}
+table.timetable .reserve {
+	background: orange;
+}
+
+table.timetable .profis {
+	background: rgb(255,74,0);
+	color: white;
+}
+
+table.timetable td.fieldC, 
+table.timetable td.hall {
+	padding: 0.5em 0.2em;
+}
+table.timetable td.fieldA.small,
+table.timetable td.fieldB.small{
+    font-size: smaller;
+}
+table.timetable td.fieldA {
+	padding: 0.5em 0.2em;
+}
+table.timetable td.fieldB {
+	padding: 0.5em 0.2em;
+}
+
+table.timetable .footer {
+    padding: 0.5em;
+    font-size: smaller;
+}
+table.timetable .time {
+}
+table.timetable tr {	
+}
